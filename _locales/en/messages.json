@@ -1,0 +1,185 @@
+{
+  "extName": {
+    "message": "GZBlock"
+  },
+  "extDescription": {
+    "message": "GZBlock: a discreet ad blocker. EasyList and Liste FR filters, element hiding, video ads, advertising cookies."
+  },
+  "popupCount": {
+    "message": "ad(s) hidden on this page"
+  },
+  "popupActiveSite": {
+    "message": "Active on this site"
+  },
+  "popupUnsupported": {
+    "message": "page not supported"
+  },
+  "popupReload": {
+    "message": "Reload page"
+  },
+  "popupPicker": {
+    "message": "Hide an element"
+  },
+  "popupPickerFailed": {
+    "message": "Not possible on this page"
+  },
+  "popupOptions": {
+    "message": "Options"
+  },
+  "privacyTitle": {
+    "message": "Privacy (all sites)"
+  },
+  "privacyDeleted": {
+    "message": "$1 tracking cookie(s) deleted"
+  },
+  "optCookiesPub": {
+    "message": "Advertising cookies"
+  },
+  "optCookiesPubHelp": {
+    "message": "Deleted, and no longer sent to ad networks"
+  },
+  "optThirdParty": {
+    "message": "Block third-party cookies"
+  },
+  "optThirdPartyHelp": {
+    "message": "May break some embedded sign-ins"
+  },
+  "optGpc": {
+    "message": "\"Do not track me\" signal (GPC)"
+  },
+  "optGpcHelp": {
+    "message": "Opt out of the sale/sharing of your data"
+  },
+  "optCleanLinks": {
+    "message": "Clean links"
+  },
+  "optCleanLinksHelp": {
+    "message": "Removes utm_, gclid, fbclid… from addresses"
+  },
+  "cleanNow": {
+    "message": "Delete tracking cookies now"
+  },
+  "cleaning": {
+    "message": "Deleting…"
+  },
+  "done": {
+    "message": "Done"
+  },
+  "optionsPageTitle": {
+    "message": "GZBlock · Options"
+  },
+  "optionsSubtitle": {
+    "message": "Blocker options. Privacy settings are in the icon menu."
+  },
+  "languageTitle": {
+    "message": "Language"
+  },
+  "languageAuto": {
+    "message": "Automatic (browser language)"
+  },
+  "modeTitle": {
+    "message": "Blocking mode"
+  },
+  "modeDiscreet": {
+    "message": "Discreet"
+  },
+  "recommended": {
+    "message": "(recommended)"
+  },
+  "modeDiscreetHelp": {
+    "message": "Hides ads without blocking any request. Sites that ask you to \"disable your ad blocker\" usually see nothing. List filters: only site-specific ones."
+  },
+  "modeStrict": {
+    "message": "Strict"
+  },
+  "likeAdblock": {
+    "message": "(like AdBlock)"
+  },
+  "modeStrictHelp1": {
+    "message": "Adds blocking of ad requests and all generic list filters. Lighter pages, but"
+  },
+  "modeStrictWarn": {
+    "message": "sites may detect the blocker"
+  },
+  "modeStrictHelp2": {
+    "message": "(videos that refuse to start, \"disable your ad blocker\" message)."
+  },
+  "listsTitle": {
+    "message": "Filter lists"
+  },
+  "updateNow": {
+    "message": "Update now"
+  },
+  "downloading": {
+    "message": "Downloading…"
+  },
+  "colList": {
+    "message": "List"
+  },
+  "colCosmetic": {
+    "message": "Cosmetic filters"
+  },
+  "colNetwork": {
+    "message": "Network filters"
+  },
+  "colStatus": {
+    "message": "Status"
+  },
+  "listOk": {
+    "message": "✓ up to date"
+  },
+  "listsNotYet": {
+    "message": "Not downloaded yet."
+  },
+  "listsLastUpdate": {
+    "message": "Last update: $1 · automatic update every 24 h"
+  },
+  "myFiltersTitle": {
+    "message": "My hidden elements"
+  },
+  "myFiltersHelp": {
+    "message": "Added with \"Hide an element\" in the icon menu."
+  },
+  "none": {
+    "message": "None yet."
+  },
+  "colSite": {
+    "message": "Site"
+  },
+  "colElement": {
+    "message": "Element"
+  },
+  "delete": {
+    "message": "Delete"
+  },
+  "disabledSitesTitle": {
+    "message": "Sites where the blocker is disabled"
+  },
+  "noDisabledSites": {
+    "message": "None: the blocker is active everywhere."
+  },
+  "reactivate": {
+    "message": "Re-enable"
+  },
+  "pickerHint": {
+    "message": "Click the element to hide · Esc to cancel"
+  },
+  "pickerHide": {
+    "message": "Hide:"
+  },
+  "pickerWider": {
+    "message": "Wider"
+  },
+  "pickerWiderTitle": {
+    "message": "Select the block that contains the element"
+  },
+  "pickerConfirm": {
+    "message": "Hide"
+  },
+  "pickerCancel": {
+    "message": "Cancel"
+  },
+  "listFailed": {
+    "message": "✗ download failed"
+  }
+}

@@ -1,0 +1,49 @@
+/*
+ * Masquage immediat (avant meme l'affichage) des emplacements publicitaires connus.
+ * Feuille de style d'extension : le site ne peut pas la lister (document.styleSheets).
+ *
+ * Volontairement ABSENTS : les noms generiques (.ad, .ads, .adsbox, .ad-banner,
+ * .pub_300x250, #ad-container...). Ce sont les "appats" que les scripts anti-adblock
+ * creent puis mesurent : les masquer revele le bloqueur. Ces cas sont traites dans
+ * content.js, qui ne masque un bloc que s'il contient une vraie publicite.
+ */
+
+/* Cadres servis par les regies publicitaires */
+iframe[src*="doubleclick.net"],
+iframe[src*="googlesyndication.com"],
+iframe[src*="googleadservices.com"],
+iframe[id^="google_ads_iframe"],
+iframe[src*="amazon-adsystem.com"],
+iframe[src*="adnxs.com"],
+iframe[src*="criteo.com"],
+iframe[src*="criteo.net"],
+iframe[src*="taboola.com"],
+iframe[src*="outbrain.com"],
+iframe[src*="smartadserver.com"],
+iframe[src*="teads.tv"],
+iframe[src*="pubmatic.com"],
+iframe[src*="rubiconproject.com"],
+iframe[src*="adform.net"],
+iframe[src*="yieldlove.com"],
+iframe[src*="media.net"],
+
+/* Emplacements Google (AdSense / Ad Manager), remplis par leur propre script */
+ins.adsbygoogle[data-ad-client],
+ins.adsbygoogle[data-ad-slot],
+div[id^="div-gpt-ad-"],
+div[id^="google_ads_iframe_"],
+div[data-google-query-id],
+
+/* Widgets "contenus sponsorises" */
+div[id^="taboola-"],
+.trc_rbox_container,
+.OUTBRAIN,
+div[id^="outbrain_widget"],
+
+/* Pages AMP */
+amp-ad,
+amp-sticky-ad,
+amp-embed[type="taboola"],
+amp-embed[type="outbrain"] {
+  display: none !important;
+}

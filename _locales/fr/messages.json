@@ -1,0 +1,185 @@
+{
+  "extName": {
+    "message": "GZBlock"
+  },
+  "extDescription": {
+    "message": "GZBlock : bloqueur de pubs discret. Listes EasyList et Liste FR, masquage d'éléments, pubs vidéo, cookies publicitaires."
+  },
+  "popupCount": {
+    "message": "pub(s) masquée(s) sur cette page"
+  },
+  "popupActiveSite": {
+    "message": "Actif sur ce site"
+  },
+  "popupUnsupported": {
+    "message": "page non prise en charge"
+  },
+  "popupReload": {
+    "message": "Recharger la page"
+  },
+  "popupPicker": {
+    "message": "Masquer un élément"
+  },
+  "popupPickerFailed": {
+    "message": "Impossible sur cette page"
+  },
+  "popupOptions": {
+    "message": "Options"
+  },
+  "privacyTitle": {
+    "message": "Vie privée (tous les sites)"
+  },
+  "privacyDeleted": {
+    "message": "$1 cookie(s) de pistage supprimé(s)"
+  },
+  "optCookiesPub": {
+    "message": "Cookies publicitaires"
+  },
+  "optCookiesPubHelp": {
+    "message": "Supprimés, et plus envoyés aux régies"
+  },
+  "optThirdParty": {
+    "message": "Bloquer les cookies tiers"
+  },
+  "optThirdPartyHelp": {
+    "message": "Peut gêner certaines connexions intégrées"
+  },
+  "optGpc": {
+    "message": "Signal « Ne pas me suivre » (GPC)"
+  },
+  "optGpcHelp": {
+    "message": "Refus de vente/partage de vos données"
+  },
+  "optCleanLinks": {
+    "message": "Nettoyer les liens"
+  },
+  "optCleanLinksHelp": {
+    "message": "Retire utm_, gclid, fbclid… des adresses"
+  },
+  "cleanNow": {
+    "message": "Supprimer les cookies de pistage maintenant"
+  },
+  "cleaning": {
+    "message": "Suppression…"
+  },
+  "done": {
+    "message": "Terminé"
+  },
+  "optionsPageTitle": {
+    "message": "GZBlock · Options"
+  },
+  "optionsSubtitle": {
+    "message": "Options du bloqueur. Les réglages de vie privée sont dans le menu de l'icône."
+  },
+  "languageTitle": {
+    "message": "Langue"
+  },
+  "languageAuto": {
+    "message": "Automatique (langue du navigateur)"
+  },
+  "modeTitle": {
+    "message": "Mode de blocage"
+  },
+  "modeDiscreet": {
+    "message": "Discret"
+  },
+  "recommended": {
+    "message": "(recommandé)"
+  },
+  "modeDiscreetHelp": {
+    "message": "Masque les pubs sans bloquer aucune requête. Les sites qui demandent de « désactiver votre bloqueur » ne voient en général rien. Filtres des listes : uniquement ceux propres à chaque site."
+  },
+  "modeStrict": {
+    "message": "Strict"
+  },
+  "likeAdblock": {
+    "message": "(comme AdBlock)"
+  },
+  "modeStrictHelp1": {
+    "message": "Ajoute le blocage des requêtes publicitaires et tous les filtres génériques des listes. Pages plus légères, mais"
+  },
+  "modeStrictWarn": {
+    "message": "les sites peuvent détecter le bloqueur"
+  },
+  "modeStrictHelp2": {
+    "message": "(vidéos qui refusent de démarrer, message « désactivez votre bloqueur »)."
+  },
+  "listsTitle": {
+    "message": "Listes de filtres"
+  },
+  "updateNow": {
+    "message": "Mettre à jour maintenant"
+  },
+  "downloading": {
+    "message": "Téléchargement…"
+  },
+  "colList": {
+    "message": "Liste"
+  },
+  "colCosmetic": {
+    "message": "Filtres d'affichage"
+  },
+  "colNetwork": {
+    "message": "Filtres réseau"
+  },
+  "colStatus": {
+    "message": "État"
+  },
+  "listOk": {
+    "message": "✓ à jour"
+  },
+  "listsNotYet": {
+    "message": "Pas encore téléchargées."
+  },
+  "listsLastUpdate": {
+    "message": "Dernière mise à jour : $1 · mise à jour automatique toutes les 24 h"
+  },
+  "myFiltersTitle": {
+    "message": "Mes éléments masqués"
+  },
+  "myFiltersHelp": {
+    "message": "Ajoutés avec « Masquer un élément » dans le menu de l'icône."
+  },
+  "none": {
+    "message": "Aucun pour l'instant."
+  },
+  "colSite": {
+    "message": "Site"
+  },
+  "colElement": {
+    "message": "Élément"
+  },
+  "delete": {
+    "message": "Supprimer"
+  },
+  "disabledSitesTitle": {
+    "message": "Sites où le bloqueur est désactivé"
+  },
+  "noDisabledSites": {
+    "message": "Aucun : le bloqueur est actif partout."
+  },
+  "reactivate": {
+    "message": "Réactiver"
+  },
+  "pickerHint": {
+    "message": "Cliquez sur l'élément à masquer · Échap pour annuler"
+  },
+  "pickerHide": {
+    "message": "Masquer :"
+  },
+  "pickerWider": {
+    "message": "Plus large"
+  },
+  "pickerWiderTitle": {
+    "message": "Sélectionner le bloc qui contient l'élément"
+  },
+  "pickerConfirm": {
+    "message": "Masquer"
+  },
+  "pickerCancel": {
+    "message": "Annuler"
+  },
+  "listFailed": {
+    "message": "✗ téléchargement impossible"
+  }
+}

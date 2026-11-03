@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>GZBlock · Options</title>
+  <link rel="icon" href="icons/gzblock-32.png">
+  <style>
+    :root { --fond: #fbfaf7; --carte: #ffffff; --texte: #1d1d1b; --doux: #6b6a66; --accent: #c62828;
+            --alerte: #b4441c; --ligne: #e3e1da; }
+    @media (prefers-color-scheme: dark) {
+      :root { --fond: #161715; --carte: #1f201d; --texte: #ecebe6; --doux: #a3a29c; --accent: #ff6b6b;
+              --alerte: #f08c5a; --ligne: #34352f; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--fond); color: var(--texte); font: 15px/1.5 system-ui, sans-serif; }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+    h1 { font-size: 24px; margin: 0 0 4px; }
+    .marque { display: flex; align-items: center; gap: 12px; }
+    .sous { color: var(--doux); margin: 0 0 28px; }
+    section { background: var(--carte); border: 1px solid var(--ligne); border-radius: 10px; padding: 20px; margin-bottom: 18px; }
+    h2 { font-size: 16px; margin: 0 0 12px; }
+    .choix { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; cursor: pointer; }
+    .choix input { margin-top: 4px; accent-color: var(--accent); }
+    .aide { color: var(--doux); font-size: 13px; display: block; }
+    .attention { color: var(--alerte); }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    td, th { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--ligne); vertical-align: top; }
+    th { color: var(--doux); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+    code { font: 12px/1.4 ui-monospace, monospace; word-break: break-all; }
+    button { font: inherit; font-size: 13px; border: 1px solid var(--ligne); background: transparent; color: var(--texte);
+             border-radius: 6px; padding: 5px 10px; cursor: pointer; }
+    button.principal { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .vide { color: var(--doux); font-size: 14px; }
+    select { font: inherit; padding: 6px 10px; border-radius: 6px; border: 1px solid var(--ligne); background: var(--fond); color: var(--texte); }
+    .ligne { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+<main>
+  <h1 class="marque"><img src="icons/gzblock-128.png" alt="" width="40" height="40">GZBlock</h1>
+  <p class="sous" data-i18n="optionsSubtitle"></p>
+
+  <section>
+    <h2 data-i18n="languageTitle"></h2>
+    <select id="langue">
+      <option value="auto" data-i18n="languageAuto"></option>
+      <option value="fr">Français</option>
+      <option value="en">English</option>
+    </select>
+  </section>
+
+  <section>
+    <h2 data-i18n="modeTitle"></h2>
+    <label class="choix"><input type="radio" name="mode" value="discret">
+      <span><strong data-i18n="modeDiscreet"></strong> <span data-i18n="recommended"></span>
+        <span class="aide" data-i18n="modeDiscreetHelp"></span></span></label>
+    <label class="choix"><input type="radio" name="mode" value="strict">
+      <span><strong data-i18n="modeStrict"></strong> <span data-i18n="likeAdblock"></span>
+        <span class="aide"><span data-i18n="modeStrictHelp1"></span> <span class="attention" data-i18n="modeStrictWarn"></span>
+        <span data-i18n="modeStrictHelp2"></span></span></span></label>
+  </section>
+
+  <section>
+    <div class="ligne"><h2 data-i18n="listsTitle"></h2><button id="maj" class="principal" data-i18n="updateNow"></button></div>
+    <table><thead><tr><th data-i18n="colList"></th><th data-i18n="colCosmetic"></th><th data-i18n="colNetwork"></th><th data-i18n="colStatus"></th></tr></thead>
+      <tbody id="listes"></tbody></table>
+    <p class="aide" id="dateListes"></p>
+  </section>
+
+  <section>
+    <h2 data-i18n="myFiltersTitle"></h2>
+    <p class="aide" data-i18n="myFiltersHelp"></p>
+    <div id="filtres"></div>
+  </section>
+
+  <section>
+    <h2 data-i18n="disabledSitesTitle"></h2>
+    <div id="sites"></div>
+  </section>
+</main>
+<script src="i18n.js"></script>
+<script src="options.js"></script>
+</body>
+</html>

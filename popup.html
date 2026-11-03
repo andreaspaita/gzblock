@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <style>
+    :root { --fond: #fbfaf7; --texte: #1d1d1b; --doux: #6b6a66; --accent: #c62828; --ligne: #e3e1da; }
+    @media (prefers-color-scheme: dark) {
+      :root { --fond: #1c1d1b; --texte: #ecebe6; --doux: #a3a29c; --accent: #ff6b6b; --ligne: #34352f; }
+    }
+    body { margin: 0; width: 300px; font: 14px/1.4 system-ui, sans-serif; background: var(--fond); color: var(--texte); }
+    main { padding: 16px; }
+    h1 { font-size: 15px; margin: 0 0 12px; }
+    .marque { display: flex; align-items: center; gap: 8px; font-size: 17px; letter-spacing: .01em; }
+    .chiffre { font-size: 32px; font-weight: 700; color: var(--accent); line-height: 1; }
+    .legende { color: var(--doux); font-size: 12px; margin-bottom: 14px; }
+    label { display: flex; align-items: center; justify-content: space-between; gap: 12px;
+            padding: 10px 0; border-top: 1px solid var(--ligne); cursor: pointer; }
+    #site { color: var(--doux); font-size: 12px; word-break: break-all; }
+    input { width: 18px; height: 18px; accent-color: var(--accent); }
+    h2 { font-size: 13px; margin: 18px 0 4px; }
+    .option { font-size: 13px; padding: 8px 0; }
+    .aide { display: block; color: var(--doux); font-size: 11px; }
+    .actions { display: flex; gap: 8px; margin-top: 10px; }
+    .actions button { display: block; width: auto; margin-top: 0; white-space: nowrap; background: transparent;
+                      color: var(--texte); border: 1px solid var(--ligne); }
+    #selecteur { flex: 1; }
+    #options { flex: none; }
+    .actions button { padding: 8px 12px; font-size: 13px; }
+    #nettoyer { display: block; background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+    button { display: none; width: 100%; margin-top: 10px; padding: 8px; border: 0; border-radius: 6px;
+             background: var(--accent); color: #fff; font: inherit; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 class="marque"><img src="icons/gzblock-48.png" alt="" width="24" height="24">GZBlock</h1>
+    <div class="chiffre" id="nombre">0</div>
+    <div class="legende" data-i18n="popupCount"></div>
+    <label>
+      <span><span data-i18n="popupActiveSite"></span><br><span id="site"></span></span>
+      <input type="checkbox" id="actif" checked>
+    </label>
+    <button id="recharger" data-i18n="popupReload"></button>
+    <div class="actions">
+      <button id="selecteur">🎯 <span data-i18n="popupPicker"></span></button>
+      <button id="options" data-i18n="popupOptions"></button>
+    </div>
+
+    <h2 data-i18n="privacyTitle"></h2>
+    <div class="legende" id="cookies"></div>
+    <label class="option"><span><span data-i18n="optCookiesPub"></span>
+      <span class="aide" data-i18n="optCookiesPubHelp"></span></span>
+      <input type="checkbox" data-reglage="cookiesPub"></label>
+    <label class="option"><span><span data-i18n="optThirdParty"></span>
+      <span class="aide" data-i18n="optThirdPartyHelp"></span></span>
+      <input type="checkbox" data-reglage="cookiesTiers"></label>
+    <label class="option"><span><span data-i18n="optGpc"></span>
+      <span class="aide" data-i18n="optGpcHelp"></span></span>
+      <input type="checkbox" data-reglage="gpc"></label>
+    <label class="option"><span><span data-i18n="optCleanLinks"></span>
+      <span class="aide" data-i18n="optCleanLinksHelp"></span></span>
+      <input type="checkbox" data-reglage="liensPropres"></label>
+    <button id="nettoyer" data-i18n="cleanNow"></button>
+  </main>
+  <script src="i18n.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
